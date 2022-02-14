@@ -1,0 +1,84 @@
+{
+  "name": "challenge",
+  "description": "challenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/history": "^5.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.3",
+    "add": "^2.0.6",
+    "axios": "^0.25.0",
+    "concurrently": "^7.0.0",
+    "history": "^5.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "query-string": "^7.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^7.25.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^8.1.0",
+    "styled-components": "^5.3.3",
+    "typescript": "4.5.3",
+    "utility-types": "^3.10.0"
+  },
+  "scripts": {
+    "start": " concurrently  \"json-server --watch src/mockup/db.json --port 8080\" \"react-scripts start\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "husky install",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "fixLint": "eslint . --fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.22",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
+    "json-server": "^0.17.0",
+    "prettier": "^2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
+  "proxy": "http://localhost:8080"
+}
