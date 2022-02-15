@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import DataGrid from 'container/common/Grid';
+import DataGrid from 'container/common/DataGrid';
 import { FieldType } from 'constants/types/grid';
 import { Orders, OrderItem } from '../../constants/model/order';
 import { formatMoney } from '../../utils/format-number';

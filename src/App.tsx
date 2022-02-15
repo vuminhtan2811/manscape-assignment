@@ -4,6 +4,7 @@ import { ModalProvider } from 'hook/modal';
 import { RouteProps } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { ProvideRouter, Route, Router, Switch } from 'hook/routers';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 const render = (props: RouteProps) => <Layout {...props} />;

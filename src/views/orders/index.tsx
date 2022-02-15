@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import DataGrid from 'container/common/Grid';
+import DataGrid from 'container/common/DataGrid';
 import OrderCard from 'components/OrderCard';
 import CancelOrder from 'components/CancelOrder';
 import RefundOrder from 'components/RefundOrder';
@@ -40,7 +40,7 @@ const Dashboard: React.FunctionComponent = () => {
       const data = { ...order, status: [...order.status, OrderStatus.CANCEL] };
       updateOrder({ id, formData: data }).then(() => {
         setOrders(updateOrderById(data, orders));
-        toast('Canceled order success', { type: 'success' });
+        // toast('Canceled order success', { type: 'success' });
         onShow(
           <OrderCard
             order={order}
