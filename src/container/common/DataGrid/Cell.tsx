@@ -7,7 +7,7 @@ import { DateFormat, DatetimeFormat, TimeFormat, TimeWithZoneFormat } from 'cons
 import { DataType } from 'constants/types/grid';
 import { DataSource } from 'constants/types/status-source-type';
 import { stopPropagation } from 'utils/stop-propagation';
-import { formatMoney } from '../../../utils/format-number';
+import { formatMoney } from 'utils/format-number';
 
 interface Props {
   cellType: DataType;

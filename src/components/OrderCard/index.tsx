@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import DataGrid from 'container/common/DataGrid';
 import { FieldType } from 'constants/types/grid';
-import { Orders, OrderItem } from '../../constants/model/order';
-import { formatMoney } from '../../utils/format-number';
+import { Orders, OrderItem } from 'constants/model/order';
+import { formatMoney } from 'utils/format-number';
 import moment from 'moment';
-import { DateTimeDo } from '../../constants/date-time';
+import { DateTimeDo } from 'constants/date-time';
 import Badge from 'components/Badge';
-import { OrderStatusSource, OrderStatus } from '../../constants/types/order-status';
+import { OrderStatusSource, OrderStatus } from 'constants/types/order-status';
 
 const Wrapper = styled.div`
   width: 100%;

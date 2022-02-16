@@ -31,12 +31,7 @@
         "phone": "84913059285",
         "balance": 1000
       },
-      "status": [
-        "SUBSCRIPTION_ORDER",
-        "PAID",
-        "UNFULFULLED",
-        "REFUNDED"
-      ]
+      "status": ["SUBSCRIPTION_ORDER", "PAID", "UNFULFULLED", "REFUNDED"]
     }
   ]
 }

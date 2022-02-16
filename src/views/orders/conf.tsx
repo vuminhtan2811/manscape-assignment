@@ -1,5 +1,5 @@
 import { FieldType } from 'constants/types/grid';
-import { OrderStatusSource } from '../../constants/types/order-status';
+import { OrderStatusSource } from 'constants/types/order-status';
 
 export const listConf: FieldType[] = [
   {

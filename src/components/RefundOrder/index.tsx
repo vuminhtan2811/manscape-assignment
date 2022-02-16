@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Orders } from '../../constants/model/order';
+import { Orders } from 'constants/model/order';
 
 const Wrapper = styled.div`
   border-radius: 4px;
